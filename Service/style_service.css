@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e6ffee, #f0fff4);
+    color: #333;
+  }
+/* Header Section */
+header {
+  background-color: #009245;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: black;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #009245;
+}
+
+.info p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 15px 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.portal {
+  background-color: #65c4a8;
+}
+
+.appointment {
+  background-color: #3f91ca;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #009245;
+  padding: 15px 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.menu a:hover {
+  color: #ffeb3b;  /* Change text color on hover */
+  transition: color 0.3s ease;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffeb3b;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+
+  h1 {
+    color: #2e8b57;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  input[type="text"] {
+    padding: 14px 18px;
+    width: 80%;
+    max-width: 420px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  thead {
+    background-color: #2e8b57;
+    color: white;
+  }
+
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f0fff5;
+  }
+
+  tbody tr:hover {
+    background-color: #c2f0d3;
+    transition: background 0.3s ease;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #0f6848;
+  }
+
+  @media (max-width: 600px) {
+    th, td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

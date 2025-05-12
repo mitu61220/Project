@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f2f2f2;
+  }
+  
+  /* Header Section */
+  header {
+    background-color: #009245;
+    color: white;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #009245;
+  }
+  
+  .info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    padding: 15px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .portal {
+    background-color: #65c4a8;
+  }
+  
+  .appointment {
+    background-color: #3f91ca;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #009245;
+    padding: 15px 0;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu input[type="text"] {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* About Us Section */
+  .goal-section {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goal-section h2 {
+    text-align: center;
+    color: #007B5E;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .goal-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    border: 2px solid #007B5E;
+  }
+  
+  .goal-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .objectives {
+    margin-top: 30px;
+  }
+  
+  .objectives h3 {
+    color: #007B5E;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .objectives ul {
+    padding-left: 20px;
+  }
+  
+  .objectives ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .goal-section {
+      padding: 20px;
+    }
+  
+    .goal-section h2 {
+      font-size: 24px;
+    }
+  
+    .goal-image {
+      max-height: 200px;
+    }
+  
+    .objectives h3 {
+      font-size: 20px;
+    }
+  }
+  

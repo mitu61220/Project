@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+/* Header Section */
+header {
+  background-color: #009245;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff;
+  color: black;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #009245;
+}
+
+.info p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 15px 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.portal {
+  background-color: #65c4a8;
+}
+
+.appointment {
+  background-color: #3f91ca;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #009245;
+  padding: 15px 0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu input[type="text"] {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+
+  .patient-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .patient-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .patient-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .patient-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #007bff;
+  }
+
+  .patient-card h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+
+  .patient-card p {
+    margin: 4px 0;
+    color: #444;
+  }

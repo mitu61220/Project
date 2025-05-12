@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment</title>
+  <link rel="stylesheet" href="../doctor_appoinment/style_doc_ap.css">
+</head>
+<body>
+
+<header>
+    <nav class="main-nav">
+        <div class="logo">Hope Life</div>
+        <div class="info">
+            <p><strong>Hotline (Barishal):</strong> 10636</p>
+            <p><strong>Working Hour:</strong> 24/7 </p>
+            <p><strong>Email:</strong> info@hopelifediagnostic.com</p>
+        </div>
+        <div class="actions">
+            <a href="../report/reports.html"><button class="portal">(DOWNLOAD REPORT)</button></a>
+            <a href="../doctor_appoinment/doctor appoinment.html"><button class="appointment">ONLINE DOCTOR APPOINTMENT</button></a>
+        </div>
+    </nav>
+
+    <ul class="menu">
+        <li><a href="../home_page.html">Home</a></li>
+        <li><a href="../About_us/About_us.html">About Us</a></li>
+        <li><a href="../Service/sevices.html">Our Services</a></li>
+        <li><a href="../Doctor/doctor.html">Doctors</a></li>
+        <li><a href="../Ambulence/ambulence.html">Ambulance</a></li>
+        <li><a href="../Contact/contact.html">Contact</a></li>
+        <li><a href="../patient/patient.html">Patient</a></li>
+        <li><a href="../Gallery/gallery.html">Gallery</a></li>
+        <li><input type="text" placeholder="Search..." /></li>
+    </ul>
+</header>
+
+  <div class="form-container">
+    <h2>Doctor Appointment</h2>
+
+    <!-- Branch Removed -->
+
+    <div class="form-group">
+      <label for="specialist">Specialist</label>
+      <select id="specialist" name="specialist">
+        <option value="">Choose Specialist</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+        <!-- more options -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="doctor">Doctor</label>
+      <select id="doctor" name="doctor">
+        <option value="">Choose a Doctor</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      <textarea id="notes" name="notes" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone No.</label>
+      <input type="text" id="phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+
+    <button class="submit-btn">Confirm Appointment</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report Download</title>
+  <link rel="stylesheet" href="../report/style_report.css">
+</head>
+<body>
+
+  <!-- Header Section (Cloned from Ambulance page) -->
+  <header>
+    <nav class="main-nav">
+      <div class="logo">Hope Life</div>
+      <div class="info">
+        <p><strong>Hotline (Barishal):</strong> 10636</p>
+        <p><strong>Working Hour:</strong> 24/7 </p>
+        <p><strong>Email:</strong> info@hopelifediagnostic.com</p>
+      </div>
+      <div class="actions">
+      <a href="../report/reports.html"> <button class="portal">(DOWNLOAD REPORT)</button></a>
+       <a href="../doctor_appoinment/doctor appoinment.html"> <button class="appointment">ONLINE DOCTOR APPOINTMENT</button></a>
+      </div>
+    </nav>
+
+    <ul class="menu">
+      <li><a href="../home_page.html">Home</a></li>
+      <li><a href="../About_us/About_us.html">About Us</a></li>
+      <li><a href="../Service/sevices.html">Our Services</a></li>
+      <li><a href="../Doctor/doctor.html">Doctors</a></li>
+      <li><a href="../Ambulence/ambulence.html">Ambulance</a></li>
+      <li><a href="../Contact/contact.html">Contact</a></li>
+      <li><a href="../patient/patient.html">Patient</a></li>
+      <li><a href="../Gallery/gallery.html">Gallery</a></li>
+      <li><input type="text" placeholder="Search..." /></li>
+    </ul>
+  </header>
+
+  <!-- Report Section -->
+  <section class="report-section">
+    <h2>📄 Download Your Medical Report</h2>
+
+    <input type="text" id="searchBox" placeholder="Search by patient name..." />
+
+    <div class="report-table">
+      <table>
+        <thead>
+          <tr>
+            <th>SL</th>
+            <th>Patient Name</th>
+            <th>Test Name</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody id="reportBody">
+          <tr>
+            <td>01</td>
+            <td>Rahim Uddin</td>
+            <td>Blood Test</td>
+            <td><a href="reports/report1.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Sadia Ahmed</td>
+            <td>X-Ray</td>
+            <td><a href="reports/report2.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Jamal Khan</td>
+            <td>Covid Test</td>
+            <td><a href="reports/report3.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Fatema Khatun</td>
+            <td>Urine Test</td>
+            <td><a href="reports/report4.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Nasim Reza</td>
+            <td>ECG</td>
+            <td><a href="reports/report5.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Asif Mahmud</td>
+            <td>Ultrasound</td>
+            <td><a href="reports/report6.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Shila Akter</td>
+            <td>Diabetes Profile</td>
+            <td><a href="reports/report7.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Kabir Hossain</td>
+            <td>Liver Function</td>
+            <td><a href="reports/report8.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>Maruf Hasan</td>
+            <td>Chest X-Ray</td>
+            <td><a href="reports/report9.pdf" download>⬇ Download</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Sumaiya Nahar</td>
+            <td>Thyroid Test</td>
+            <td><a href="reports/report10.pdf" download>⬇ Download</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    const searchBox = document.getElementById('searchBox');
+    const rows = document.querySelectorAll('#reportBody tr');
+
+    searchBox.addEventListener('keyup', () => {
+      const searchValue = searchBox.value.toLowerCase();
+      rows.forEach(row => {
+        const name = row.cells[1].textContent.toLowerCase();
+        row.style.display = name.includes(searchValue) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

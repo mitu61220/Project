@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #009245;
+    color: white;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: black;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #009245;
+  }
+  
+  .info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+  }
+  
+  .actions button {
+    margin-left: 10px;
+    padding: 15px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .portal {
+    background-color: #65c4a8;
+  }
+  
+  .appointment {
+    background-color: #3f91ca;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center; /* Center the menu */
+    background-color: #009245;
+    padding: 15px 0; /* Increased top-bottom spacing */
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 25px; /* More space between menu items */
+  }  
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  .menu input[type="text"] {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+  }  
+  
+  .hero {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .hero .text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+  }
+  
+  .hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #009245;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .quick-links {
+    background-color: #009245;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+  }
+  
+  .quick-links button {
+    background-color: white;
+    color: #009245;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  

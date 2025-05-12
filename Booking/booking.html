@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital Booking System</title>
+  <link rel="stylesheet" href="../Booking/style_booking.css">
+</head>
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <div class="logo">Hope Life</div>
+      <div class="info">
+        <p><strong>Hotline (Barishal):</strong> 10636</p>
+        <p><strong>Working Hour:</strong> 24/7 </p>
+        <p><strong>Email:</strong> info@hopelifediagnostic.com</p>
+      </div>
+      <div class="actions">
+       <a href="../report/reports.html"><button class="portal"> (DOWNLOAD REPORT)</button></a>
+       <a href="../doctor_appoinment/doctor appoinment.html"><button class="appointment">ONLINE DOCTOR APPOINTMENT</button></a>
+      </div>
+    </nav>
+
+    <ul class="menu">
+      <li><a href="../home_page.html">Home</a></li>
+      <li><a href="../About_us/About_us.html">About Us</a></li>
+      <li><a href="../Service/sevices.html">Our Services</a></li>
+      <li><a href="../Doctor/doctor.html">Doctors</a></li>
+      <li><a href="../Ambulence/ambulence.html">Ambulance</a></li>
+      <li><a href="../Contact/contact.html">Contact</a></li>
+      <li><a href="../patient/patient.html">Patient</a></li>
+      <li><a href="../Gallery/gallery.html">Gallery</a></li>
+      <li><input type="text" placeholder="Search..." /></li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <h1>💚 Hospital Booking System</h1>
+
+    <form id="bookingForm">
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" name="patientName" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="bloodTest">Blood Test</option>
+        <option value="xRay">X-Ray</option>
+        <option value="ecg">ECG</option>
+        <option value="ultrasound">Ultrasound</option>
+        <option value="covidTest">Covid-19 PCR</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div class="confirmation" id="confirmationMessage">
+      Your booking has been successfully received. We will contact you soon!
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("bookingForm");
+    const confirmationMessage = document.getElementById("confirmationMessage");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const patientName = document.getElementById("patientName").value;
+      const phone = document.getElementById("phone").value;
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+
+      if (patientName && phone && service && date) {
+        confirmationMessage.style.display = "block";
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
